@@ -1,0 +1,83 @@
+{
+  "name": "@svgph/agent-config-sync",
+  "version": "0.1.0",
+  "description": "Single source of truth for AI coding agent configuration (Cursor, Claude Code, Cline, Codex, Windsurf, Continue.dev)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "agent-config": "bin/agent-config.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "npx tsup",
+    "dev": "npx tsup --watch",
+    "test": "npx vitest run",
+    "test:watch": "npx vitest",
+    "typecheck": "npx tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build",
+    "pack:dry": "npm pack --dry-run",
+    "changeset": "changeset"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alifkhanwork/agent-config-sync.git"
+  },
+  "homepage": "https://github.com/alifkhanwork/agent-config-sync#readme",
+  "bugs": {
+    "url": "https://github.com/alifkhanwork/agent-config-sync/issues"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "config",
+    "cursor",
+    "claude-code",
+    "cline",
+    "codex",
+    "windsurf",
+    "continue-dev",
+    "sync",
+    "keychain"
+  ],
+  "author": "SVG Team",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "picocolors": "^1.1.1",
+    "cli-table3": "^0.6.5",
+    "yaml": "^2.6.1",
+    "smol-toml": "^1.3.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.10",
+    "@types/node": "^20.14.0",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  },
+  "optionalDependencies": {
+    "keytar": "^7.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

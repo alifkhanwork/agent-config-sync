@@ -1,0 +1,12 @@
+src/
+tests/
+.github/
+.vscode/
+.changeset/
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+*.log
+.agent-config/
+.env*
+*.bak
