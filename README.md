@@ -1,4 +1,4 @@
-# `@svgph/agent-config-sync` 🚀
+# `@siliconvalleyglobalph/agent-config-sync` 🚀
 
 > **Single source of truth for AI coding agent configuration** — API keys, default models, and tool settings — synchronized automatically to native configurations used by **Cursor**, **Claude Code**, **Cline**, **Codex CLI**, **Windsurf**, and **Continue.dev**.
 
@@ -42,10 +42,10 @@ Developers currently re-enter the same API keys and model preferences separately
 
 ```bash
 # Global installation via npm
-npm install -g @svgph/agent-config-sync
+npm install -g @siliconvalleyglobalph/agent-config-sync
 
 # Or run directly with npx
-npx @svgph/agent-config-sync --help
+npx @siliconvalleyglobalph/agent-config-sync --help
 ```
 
 ---
