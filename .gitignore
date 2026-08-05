@@ -1,0 +1,8 @@
+node_modules/
+.agent-config/
+*.log
+*.bak
+.vault.enc
+.vault.key
+.env*
+dist/*.map
