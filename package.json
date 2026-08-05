@@ -1,5 +1,5 @@
 {
-  "name": "@siliconvalleyglobalph/agent-config-sync",
+  "name": "@siliconvalleyglobal/agent-config-sync",
   "version": "0.1.0",
   "description": "Single source of truth for AI coding agent configuration (Cursor, Claude Code, Cline, Codex, Windsurf, Continue.dev)",
   "main": "dist/index.js",
