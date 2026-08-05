@@ -1,6 +1,6 @@
 {
   "name": "@siliconvalleyglobal/agent-config-sync",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Single source of truth for AI coding agent configuration (Cursor, Claude Code, Cline, Codex, Windsurf, Continue.dev)",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -44,6 +44,10 @@
     "url": "https://github.com/alifkhanwork/agent-config-sync/issues"
   },
   "keywords": [
+    "ai",
+    "claude",
+    "gemini",
+    "antigravity",
     "ai-agent",
     "ai-agents",
     "cli",
